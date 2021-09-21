@@ -24,3 +24,33 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scroll')
   }
 })
+
+// swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: 'swiper-pagination',
+    type: 'bullets'
+  },
+  mousewheel: true,
+  Keyboard: true
+})
+
+// scrollreveal
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+scrollReveal.reveal(
+  `
+#home .text,#home .image,
+#about .image, #about .text,
+#services header, #services .card,
+#testimonials header, #testimonials .testimonial,
+#contact .text, #contact .links
+`,
+  { interval: 100 }
+)
