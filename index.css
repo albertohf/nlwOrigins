@@ -231,6 +231,9 @@ nav.show div.icon-close {
 .logo span {
   color: var(--base-color);
 }
+.logo-alt span {
+  color: var(--body-color);
+}
 
 main {
   margin-top: 4.5rem;
@@ -409,4 +412,28 @@ main {
 }
 #contact ul li i {
   color: var(--base-color);
+}
+
+/* Footer */
+
+footer {
+  background: var(--base-color);
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--title-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--title-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
 }
